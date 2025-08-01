@@ -50,3 +50,15 @@ values
 (3, 'Kennedy Lane', 'mattis.Cras@nonenimMauris.net', '(542) 451-7038', true, 2),
 (4, 'Wylie Pope', 'est@utquamvel.net', '(692) 802-2949', false, 2),
 (5, 'Cyrus Jackson', 'nibh@semsempererat.com', '(501) 472-5218', false, null);
+
+-- rename col
+alter table public.name_table rename column old_name to new_name;
+-- change type col
+alter table schame.name_table alter column name_column
+set data type <new-data-type>;
+-- add extra column
+alter table schema.name-table add <name-column> <type>;
+-- drop col
+alter table schema.name-table drop column name-column;
+-- create index from column 
+create index name-index on public.my_table (name-col);
